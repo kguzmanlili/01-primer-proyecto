@@ -22,31 +22,10 @@ export class MainPageComponent {
     nombre:'Piccolo',
     poder: 8000
    }
- ]
+ ];
+
  nuevo: Personaje = {
-   nombre: 'Krillin',
-   poder: 1000
+   nombre: 'Maestro Roshi',
+   poder: 2000
  }
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  agregar(){
-    if(this.nuevo.nombre.trim().length == 0){
-      return;
-    }
-    
-    this.personajes.push(this.nuevo);
-    this.nuevo = {
-      nombre: '',
-      poder: 0
-    }
-
-  }
-
-  cambiarNombre(event: any){
-    console.log(event)
-
-  }
 }
